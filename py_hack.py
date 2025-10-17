@@ -9,6 +9,17 @@ s.run("clear.bat")
 c.init()
 
 f = c.Fore
+print(f.RED   +"██   ██  "+f.YELLOW+" █████ "+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
+print(f.RED   +"██   ██  "+f.YELLOW+" █   █ "+f.BLUE+"  █   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  ██ ██"+f.YELLOW+"   ██   ██")
+print(f.RED   +"███████  "+f.YELLOW+"██   ██"+f.BLUE+" ██      "+f.WHITE+"  ███████  "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
+print(f.RED   +"██   ██  "+f.YELLOW+"███████"+f.BLUE+" ██   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"    ████  ")
+print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+" ██   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"    ██    ")
+print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"      ███ ")
+   
+   
+
+
+
 print(f.YELLOW+"["+f.RED+"1"+f.YELLOW+"]"+f.WHITE+" hacker web")
 print(" ")
 print(f.YELLOW+"["+f.RED+"0"+f.YELLOW+"]"+f.RED+" exit")
@@ -40,6 +51,7 @@ elif i == "1":
             if w == "exit":
                 print("exit")
                 print(f.WHITE+" ------------------------- "+f.RED+"Stop"+f.WHITE+" -------------------------------")
+                exit()
             wb.open("https://"+w+"/")
             print(" url = "+f.GREEN+"https://"+w+"/"+f.WHITE+"------------------------------")
     elif i == "2":
@@ -54,5 +66,8 @@ elif i == "1":
         s.run("clear.bat")
         while True:
             i = input(" > hacker web > search page web > page is : ")
+            if i == "exit":
+                exit()
             print(" ")
-            e(i)
+            e("https://"+i+"/")
+            
