@@ -4,22 +4,27 @@ import subprocess as s
 import time
 import webbrowser as wb
 
+v = "1.0"
 time.sleep(1)
 s.run("clear.bat")
 c.init()
 
 f = c.Fore
 print(f.RED   +"██   ██  "+f.YELLOW+" █████ "+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
+time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+" █   █ "+f.BLUE+"  █   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  ██ ██"+f.YELLOW+"   ██   ██")
+time.sleep(0.3)
 print(f.RED   +"███████  "+f.YELLOW+"██   ██"+f.BLUE+" ██      "+f.WHITE+"  ███████  "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
+time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+"███████"+f.BLUE+" ██   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"    ████  ")
+time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+" ██   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"    ██    ")
+time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"      ███ ")
+time.sleep(0.3)
+print(f.WHITE+"version : "+v)
+print(f.YOLLEW+"                      HackPy              ")
    
-   
-
-
-
 print(f.YELLOW+"["+f.RED+"1"+f.YELLOW+"]"+f.WHITE+" hacker web")
 print(" ")
 print(f.YELLOW+"["+f.RED+"0"+f.YELLOW+"]"+f.RED+" exit")
