@@ -23,7 +23,7 @@ time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"      ███ ")
 time.sleep(0.3)
 print(f.WHITE+"version : "+v)
-print(f.YOLLEW+"                      HackPy              ")
+print(f.YELLOW+"                      HackPy              ")
    
 print(f.YELLOW+"["+f.RED+"1"+f.YELLOW+"]"+f.WHITE+" hacker web")
 print(" ")
