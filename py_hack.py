@@ -3,28 +3,35 @@ import os
 import subprocess as s
 import time
 import webbrowser as wb
+import random
+import sys as y
 
-v = "1.0"
+v = "1.2"
 time.sleep(1)
 s.run("clear.bat")
 c.init()
-
+r = random.randint(0,4)
+k = r
 f = c.Fore
-print(f.RED   +"██   ██  "+f.YELLOW+" █████ "+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
+print(f.RED   +"██   ██  "+f.YELLOW+" █████ "+f.BLUE+"  █████  "+f.WHITE+"  ██    ██ "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
 time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+" █   █ "+f.BLUE+"  █   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  ██ ██"+f.YELLOW+"   ██   ██")
 time.sleep(0.3)
-print(f.RED   +"███████  "+f.YELLOW+"██   ██"+f.BLUE+" ██      "+f.WHITE+"  ███████  "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
+print(f.RED   +"███████  "+f.YELLOW+"██   ██"+f.BLUE+" ██      "+f.WHITE+"  ██  ██   "+f.GREEN+"  █████"+f.YELLOW+"   ██   ██")
 time.sleep(0.3)
-print(f.RED   +"██   ██  "+f.YELLOW+"███████"+f.BLUE+" ██   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"    ████  ")
+print(f.RED   +"██   ██  "+f.YELLOW+"███████"+f.BLUE+" ██   █  "+f.WHITE+"  ████     "+f.GREEN+"  █    "+f.YELLOW+"    ████  ")
 time.sleep(0.3)
-print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+" ██   █  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"    ██    ")
+print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+" ██   █  "+f.WHITE+"  ██  ██   "+f.GREEN+"  █    "+f.YELLOW+"    ██    ")
 time.sleep(0.3)
 print(f.RED   +"██   ██  "+f.YELLOW+"██   ██"+f.BLUE+"  █████  "+f.WHITE+"  ██   ██  "+f.GREEN+"  █    "+f.YELLOW+"      ███ ")
 time.sleep(0.3)
 print(f.WHITE+"version : "+v)
 print(f.YELLOW+"                      HackPy              ")
-   
+
+for i in range(r):
+    time.sleep(1)
+    k = k-1
+    print(f.WHITE+"time : "+f.BLUE+str(k))
 print(f.YELLOW+"["+f.RED+"1"+f.YELLOW+"]"+f.WHITE+" hacker web")
 print(" ")
 print(f.YELLOW+"["+f.RED+"0"+f.YELLOW+"]"+f.RED+" exit")
@@ -74,5 +81,6 @@ elif i == "1":
             if i == "exit":
                 exit()
             print(" ")
-            e("https://"+i+"/")
-            
+            e(i)
+
+
